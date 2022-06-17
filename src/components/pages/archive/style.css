@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    overflow-y: hidden;
+}
+
+.outer {
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.outer::-webkit-scrollbar {
+    display: none;
+}
+
+.inner {
+    height: 100vh;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "GmarketSansBold";
+}
+
+.bg-First {
+    font-size: 5vh;
+}
+
+.bg-Second {
+    
+}
+
+.bg-Third {
+    
+}
+
+.divider {
+    width: 100%;
+    height: 5px;
+    background-color: white;
+}
