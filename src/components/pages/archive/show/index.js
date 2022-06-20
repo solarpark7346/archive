@@ -5,8 +5,9 @@ const A_show = (props) => {
     return(
         <React.Fragment>
             <div className='main_column'>
-                <p>저희 아카이브는 다양한 플랫폼과 함께 개인 작업을 담는 저장소입니다.</p>
-                <span></span>
+                <span>안녕하세요 박보성입니다.</span>
+                <p>저는 편집자입니다.</p>
+                
             </div>
         </React.Fragment>
     )

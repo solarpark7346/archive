@@ -23,6 +23,7 @@ const Home = (props) => {
             let hover = gsap.to(img, {
                 scale: 1.12, 
                 duration: 0.5, 
+                y: -10,
                 paused: true, 
                 ease: "power1.inOut"});
             img.addEventListener("mouseenter", 

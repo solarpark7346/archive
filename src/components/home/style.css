@@ -4,6 +4,8 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
+    width: 100%;
+    font-family: "GmarketSansMedium";
 }
 
 .main_column_1080{
@@ -19,7 +21,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 30vh;
     font-family: "GmarketSansLight";
 }
 
@@ -45,10 +47,10 @@
 p.typing-text{
     position:relative;
     font-size: 30px;
-    width: 180px;
+    width: 157px;
     height: 30px; 
     overflow: hidden;
-    animation: typingAni 3s steps(5, end) 1;
+    animation: typingAni 3s steps(6, step-end) infinite;
 } 
 p.typing-text::after{
     position: absolute; 
@@ -58,16 +60,25 @@ p.typing-text::after{
     height: 30px;
     top: 0;
     right: 0; 
-    border-right: 1px solid #000;
+    border-right: 2px solid white;
     animation: cursor 0.3s step-end infinite;
 }
 @keyframes typingAni {
     0%{width:0%}
-    100%{width: 180px};
+    100%{width: 200px};
 }
 
 @keyframes cursor{
     0%{opacity:0;}
     50%{opacity:1;}
     100%{opacity:0;}
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
